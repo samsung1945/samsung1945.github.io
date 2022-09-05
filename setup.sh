@@ -462,30 +462,29 @@ cat > /usr/local/etc/xray/config.json << END
 }
 END
 
-cd /usr/bin
-wget -q -O addtr "https://raw.githubusercontent.com/samsung1945/samsung1945.github.io/main/addtr.sh"
-wget -q -O addws "https://raw.githubusercontent.com/samsung1945/samsung1945.github.io/main/addws.sh"
-wget -q -O addvless "https://raw.githubusercontent.com/samsung1945/samsung1945.github.io/main/addvless.sh"
-wget -q -O addss "https://raw.githubusercontent.com/samsung1945/samsung1945.github.io/main/addss.sh"
-wget -q -O cek-user "https://raw.githubusercontent.com/samsung1945/samsung1945.github.io/main/cek-user.sh"
-wget -q -O renew "https://raw.githubusercontent.com/samsung1945/samsung1945.github.io/main/renew.sh"
-wget -q -O xp "https://raw.githubusercontent.com/samsung1945/samsung1945.github.io/main/xp.sh"
-wget -q -O menu "https://raw.githubusercontent.com/samsung1945/samsung1945.github.io/main/menu.sh"
-wget -q -O del-user "https://raw.githubusercontent.com/samsung1945/samsung1945.github.io/main/del-user.sh"
-wget -q -O asu "https://raw.githubusercontent.com/samsung1945/samsung1945.github.io/main/asu.sh"
-wget -q -O cek-usage "https://raw.githubusercontent.com/samsung1945/samsung1945.github.io/main/cek-usage.sh"
+wget -q -O /usr/bin/addtr "https://raw.githubusercontent.com/samsung1945/samsung1945.github.io/main/addtr.sh"
+wget -q -O /usr/bin/addws "https://raw.githubusercontent.com/samsung1945/samsung1945.github.io/main/addws.sh"
+wget -q -O /usr/bin/addvless "https://raw.githubusercontent.com/samsung1945/samsung1945.github.io/main/addvless.sh"
+wget -q -O /usr/bin/addss "https://raw.githubusercontent.com/samsung1945/samsung1945.github.io/main/addss.sh"
+wget -q -O /usr/bin/cek-user "https://raw.githubusercontent.com/samsung1945/samsung1945.github.io/main/cek-user.sh"
+wget -q -O /usr/bin/renew "https://raw.githubusercontent.com/samsung1945/samsung1945.github.io/main/renew.sh"
+wget -q -O /usr/bin/xp "https://raw.githubusercontent.com/samsung1945/samsung1945.github.io/main/xp.sh"
+wget -q -O /usr/bin/menu "https://raw.githubusercontent.com/samsung1945/samsung1945.github.io/main/menu.sh"
+wget -q -O /usr/bin/del-user "https://raw.githubusercontent.com/samsung1945/samsung1945.github.io/main/del-user.sh"
+wget -q -O /usr/bin/asu "https://raw.githubusercontent.com/samsung1945/samsung1945.github.io/main/asu.sh"
+wget -q -O /usr/bin/cek-usage "https://raw.githubusercontent.com/samsung1945/samsung1945.github.io/main/cek-usage.sh"
 
-chmod +x menu
-chmod +x addtr
-chmod +x addws
-chmod +x addvless
-chmod +x addss
-chmod +x cek-user
-chmod +x renew
-chmod +x xp
-chmod +x del-user
-chmod +x asu
-chmod +x cek-usage
+chmod +x /usr/bin/menu
+chmod +x /usr/bin/addtr
+chmod +x /usr/bin/addws
+chmod +x /usr/bin/addvless
+chmod +x /usr/bin/addss
+chmod +x /usr/bin/cek-user
+chmod +x /usr/bin/renew
+chmod +x /usr/bin/xp
+chmod +x /usr/bin/del-user
+chmod +x /usr/bin/asu
+chmod +x /usr/bin/cek-usage
 cd
 systemctl restart xray
 systemctl enable xray
