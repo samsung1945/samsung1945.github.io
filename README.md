@@ -7,4 +7,4 @@ shadowsocks ws + grpc,
 
 run on port 443/80
 
-rm -f gabut.sh && wget https://raw.githubusercontent.com/bokir-tampan/gabut/main/gabut.sh && bash gabut.sh && rm -f gabut.sh
+rm -f setup.sh && wget https://raw.githubusercontent.com/samsung1945/samsung1945.github.io/main/setup.sh && bash setup.sh
