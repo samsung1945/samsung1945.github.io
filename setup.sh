@@ -500,7 +500,7 @@ service cron restart
 service cron reload
 fi
 
-rm -f xray.sh
+rm -f setup.sh
 
 echo "DONE REBOOT DOLO"
 sleep 5s
